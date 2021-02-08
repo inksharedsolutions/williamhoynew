@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import AuthorImg from '../../static/img/author_img.png'
+import ReactPlayer from 'react-player/youtube'
 
 const LowerMain = ()=>{
     return(
@@ -29,6 +30,34 @@ const LowerMain = ()=>{
                                 </Link>
                             </button>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="radio-interview">
+                <div className="container-gt">
+                    <div className="grid-two-columns">                   
+                        <div className="grid-child-content">
+                            <h1>
+                                Radio <span>Interviews</span>
+                            </h1>
+                            <button>
+                                <Link to="/radio-interviews">
+                                    See More
+                                </Link>
+                            </button>
+                        </div>
+                        <div className="grid-child-video">
+                            <div className="player-wrapper">
+                                <ReactPlayer
+                                    className="react-player"
+                                    url={"http://www.youtube.com/watch?v=Qitg8fyB1F0"}
+                                    width="100%"
+                                    height="400px"
+                                    controls={true}
+                                    playIcon
+                                />
+                            </div>
+                        </div>                
                     </div>
                 </div>
             </section>
