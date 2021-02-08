@@ -16,19 +16,19 @@ const MidMain = ()=>{
 
                     <div className="grid-template-four-col" id="logos-col">
                         <li>
-                          <img src={Logo1}/>
+                          <img src={Logo1} alt="Amazon logo"/>
                         </li>
 
                         <li>
-                            <img src={Logo2}/>  
+                            <img src={Logo2} alt="Books A Million logo"/>  
                         </li>
 
                         <li>
-                            <img src={Logo3}/>
+                            <img src={Logo3} alt="Barnes &amp; Noble logo"/>
                         </li>
 
                         <li>
-                            <img src={Logo4}/>
+                            <img src={Logo4} alt="Stratton logo"/>
                         </li>
 
                     </div>

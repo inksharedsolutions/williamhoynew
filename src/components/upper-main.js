@@ -18,7 +18,7 @@ const UpperMain =()=>{
 
                     <div className="grid-two-columns" id="wrapper-two-books">
                         <div className="book-wraps">
-                            <img src={Book1}/>
+                            <img src={Book1} alt="book cover"/>
                             <h5>GOTCH'EN</h5>
                             <span>Johnny Taggett</span>
                             <button>
@@ -30,7 +30,7 @@ const UpperMain =()=>{
                         </div>
 
                         <div className="book-wraps">
-                            <img src={Book2}/>
+                            <img src={Book2} alt="book cover"/>
                             <h5>THE</h5>
                             <span>Gifted One</span>
                             <button>

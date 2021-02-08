@@ -6,7 +6,7 @@ import AuthorImg from '../../static/img/author_img.png'
 
 
 /*Slick*/
-import Slider from "react-slick";
+/* import Slider from "react-slick"; */
 // Import css files
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -34,13 +34,13 @@ const ATB = (props)=>{
     }, [mobState]); 
 
 
-    var settings = {
+    /* var settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: (mobState) ? 1 : 3,
         slidesToScroll: 1,
-     };
+     }; */
 	
 	return (
 		<>
@@ -55,7 +55,7 @@ const ATB = (props)=>{
 
                         <div className="heading-quote column">
                             <div className="author-image-container">
-                                <img src={AuthorImg} />
+                                <img src={AuthorImg} alt="William D. Hoy"/>
                             </div>
 
                             <div className="heading-quote">
@@ -103,24 +103,24 @@ const ATB = (props)=>{
 
                             <div className="photo-row">
                                 <div className="photo-column">
-                                    <img src={Img6}/>
+                                    <img src={Img6} alt="book signing"/>
                                 </div>
                                 <div className="photo-column">
-                                    <img src={Img4}/>
-                                    <img src={Img2}/>
-                                    <img src={Img3}/>
+                                    <img src={Img4} alt="seven men smiling"/>
+                                    <img src={Img2} alt="3 men looking sideways"/>
+                                    <img src={Img3} alt="3 men smiling"/>
                                 </div>
                                 <div className="photo-column">
-                                    <img src={Img5}/>
+                                    <img src={Img5} alt="author"/>
 
-                                    <img src={Img1}/>
+                                    <img src={Img1} alt="man and woman"/>
                                 </div>
                             </div>
 
                         </div>
                     </div>
 
-                    
+                    {/* 
                     <div id="slider-container">
                         <Slider {...settings} className="ata-slider">
 
@@ -155,7 +155,7 @@ const ATB = (props)=>{
                                 </div>
                         </Slider>
                     </div>
-
+                     */}
 
                 </div>
 
