@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import Book1 from '../images/book_front_1.png'
-import Book2 from '../images/book_front_2.png'
+import Book1 from "../images/gotch'em-book-1-min.png"
+import Book2 from '../images/the-gifted-one-book-min.png'
 
 const UpperMain =()=>{
     return  (
@@ -11,19 +11,20 @@ const UpperMain =()=>{
                     <h1>Books</h1>
                     
                     <p className="middle-params">
-                       I wrote and published Gotch'em: Johnny Taggett,
-                       a tuff guy detective mystery, and The Gifted One,
-                       an adventure Sci-Fi novel.
+                       I wrote and published The Gifted One,
+                       an adventure Sci-Fi novel, and Gotch'em: Johnny Taggett,
+                       a tuff guy detective mystery.
                     </p>
 
                     <div className="grid-two-columns" id="wrapper-two-books">
                         <div className="book-wraps">
                             <img src={Book1} alt="book cover"/>
-                            <h5>GOTCH'EN</h5>
+                            <h5>GOTCH'EM</h5>
                             <span>Johnny Taggett</span>
+                            
                             <button>
                                 <Link 
-                                    to={'/about-the-book/#johnny_taggett'}>
+                                    to={'/books/#johnny_taggett'}>
                                         Read More
                                 </Link>
                             </button>
@@ -31,11 +32,10 @@ const UpperMain =()=>{
 
                         <div className="book-wraps">
                             <img src={Book2} alt="book cover"/>
-                            <h5>THE</h5>
-                            <span>Gifted One</span>
+                            <h5>THE GIFTED ONE</h5>
                             <button>
                                 <Link 
-                                    to={'/about-the-book/#the_gifted_one'}>
+                                    to={'/books/#the_gifted_one'}>
                                     Read More
                                 </Link>
                             </button>

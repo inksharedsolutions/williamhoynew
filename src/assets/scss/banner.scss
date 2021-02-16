@@ -1,18 +1,37 @@
 .banner-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h1{
+        margin-top: 4.8em;
         span{
-           
-            color: #000 !important;
+            color: #fff !important;
             display: block;
+            text-align: center;
         }
+    }
+    p{
+        color: #fff !important;
+        text-align: center;
+    }
+    button{
+        padding: 1% 5%;
+        margin-top: 20px;
     }
 }
 
 .banner-section{
-    background: #f7f4e9;
-    height: 70vh;
+    // background: #f7f4e9;
+    // background: url('../../../static/banner/gotch\'em.png') no-repeat fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../static/banner/banner1-min.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
     h1{
-        font-size: 2.0em;
+        font-size: 3em;
         font-weight: bold;
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import {faTwitter, faInstagram, faFacebook, faGoodreads } from '@fortawesome/fontawesome-free-brands'
+import {faTwitter, faInstagram, faFacebook, faGoodreads, faImdb } from '@fortawesome/fontawesome-free-brands'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 
@@ -11,7 +11,7 @@ const Footer = ()=>{
                 <div className="container-gt" id="footer-info">
                     <h1>WH.</h1>
                     <p>
-                        William Hoy loves to hear from readers. You can reach him via email. 
+                        William D. Hoy loves to hear from readers. You can reach him via email. 
                         Feel free to send questions about writing, his works, interviews 
                         and other publicity matters.
                     </p> 
@@ -60,6 +60,17 @@ const Footer = ()=>{
                                         icon={faGoodreads} />
                                 </a>
                             </li>
+                            {/* <li>
+                                <a 
+                                    rel="noopener noreferrer"
+                                    target="_blank"
+                                    href="https://www.imdb.com/name/nm6517171/"
+                                    alt="IMDB">
+                                    <FontAwesomeIcon 
+                                        className='font-awesome'
+                                        icon={faImdb} />
+                                </a>
+                            </li> */}
                         </ul>
                     </nav>
 

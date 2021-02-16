@@ -52,6 +52,7 @@ button{
 .grid-two-columns{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
     height: 70vh;
     margin: 0 5%;
     align-items: center;
@@ -66,7 +67,7 @@ button{
 
 .container-gt{
     max-width: 1400px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .separator-line{

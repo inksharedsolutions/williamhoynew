@@ -3,7 +3,7 @@
 $primary-font: "Quicksand", sans-serif !important;
 $prm-font-size: 12px;
 
-@charset "utf-8";
+// @charset "utf-8";
 // If need, change your variables before importing Bulma
 
 @import "~bulma/bulma.sass";
@@ -11,23 +11,25 @@ $prm-font-size: 12px;
 .web-banner {
 	height: 400px;
 	background-attachment: fixed;
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: #f7f4e9;
-
+    background-position: center;
+	// background: #f7f4e9;
+	// background: url('../../../static/banner/the-gifted-one.png') no-repeat;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../static/banner/the-gifted-one-min.png");
+    
 	span {
 		letter-spacing: 0.67em;
 		text-transform: uppercase;
 		line-height: 2;
-		color: #989393;
+		color: #ffffff !important;
 	}
 
 	h1 {
 		font-size: 4em;
 		font-weight: 900;
 		text-transform: uppercase;
-		color: #a78d32;
+		color: #ffd642;
 	}
 }
 
@@ -436,9 +438,11 @@ $prm-font-size: 12px;
 
 /*Photo Grid*/
 .photo-row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
+	overflow: auto;
+	white-space: nowrap;
+	// display: flex;
+	// flex-wrap: wrap;
+	// padding: 0 4px;
 
 	margin-bottom: 7em;
 	box-shadow: 2px 3px 14px 0px rgba(255, 236, 236, 0.5);
@@ -447,11 +451,30 @@ $prm-font-size: 12px;
 	justify-content: center;
 }
 
+/*Custom Scroll*/
+.photo-row::-webkit-scrollbar {
+	width: 10px;
+}
+
+.photo-row::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+  }
+
+.photo-row::-webkit-scrollbar-thumb {
+	background: rgb(197, 197, 197);
+	border-radius: 10px;
+}
+
+.photo-row::-webkit-scrollbar-thumb:hover {
+	background: rgb(173, 173, 173); 
+}
+
 /* Create four equal columns that sits next to each other */
 .photo-column {
 	flex: 25%;
 	max-width: 33%;
 	padding: 0 4px;
+	display: inline-block;
 }
 
 .photo-column img {
@@ -497,5 +520,61 @@ $prm-font-size: 12px;
 }
 
 .radint-vid {
+	// display: flex;
 	margin: 0 20px;
+	align-content: center;
+}
+
+/*Videos*/
+.radio-interviews-content{
+	.video-header{
+		font-size: 3em;
+		font-weight: bold;
+		padding: 0 50px;
+	}
+
+	.video-header:nth-child(1){
+		margin-top: 100px;
+	}
+
+	.video-row{
+		overflow: auto;
+        white-space: nowrap;
+        margin: 0 10% 100px;
+        max-width: 1200px;
+		padding: 3% 0;
+		background:rgb(241, 241, 241);
+
+
+		.player-wrapper{
+            display: inline-block;
+			width: 600px;
+            padding: 0 1%;
+        }
+	}
+
+	/*Custom Scroll*/
+	.video-row::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	.video-row::-webkit-scrollbar-track {
+		background: #f1f1f1; 
+	}
+
+	.video-row::-webkit-scrollbar-thumb {
+		background: rgb(197, 197, 197);
+		border-radius: 10px;
+	}
+
+	.video-row::-webkit-scrollbar-thumb:hover {
+		background: rgb(173, 173, 173); 
+	}
+
+	#commercial-vid{
+        display: flex;
+        justify-content: center;
+		margin: 0 10% 100px;
+    }
+
 }

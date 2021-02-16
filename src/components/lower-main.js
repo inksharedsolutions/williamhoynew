@@ -20,7 +20,7 @@ const LowerMain = ()=>{
                                 years later I got my Bachelor’s Degree from Columbia College.
                             </p>
 
-                            <h1>William Hoy</h1>
+                            <h1>William D. Hoy</h1>
 
                             <span className="span-tagline">Author & Writer</span>
 
@@ -35,8 +35,15 @@ const LowerMain = ()=>{
             </section>
             <section className="radio-interview">
                 <div className="container-gt">
-                    <div className="grid-two-columns">                   
-                        <div className="grid-child-content">
+                    <h1 className="section-header">Featured Videos</h1>
+                    <div className="grid-two-columns" style={{height: 'auto'}}>  
+                        <div className="grid-child-video">
+                            <h1 className="title">Encarnatus</h1>
+                            <div className="player-wrapper">
+                                <iframe src="https://drive.google.com/file/d/1g67_4b5xnpfyT7J4drWEpI7QOnPm_UAs/preview" width="100%" height="400" title="encarnatus1"></iframe>
+                            </div>
+                        </div>                  
+                        {/* <div className="grid-child-content">
                             <h1>
                                 Radio <span>Interviews</span>
                             </h1>
@@ -45,8 +52,9 @@ const LowerMain = ()=>{
                                     See More
                                 </Link>
                             </button>
-                        </div>
+                        </div> */}
                         <div className="grid-child-video">
+                            <h1 className="title">Radio Interview</h1>
                             <div className="player-wrapper">
                                 <ReactPlayer
                                     className="react-player"
@@ -59,6 +67,11 @@ const LowerMain = ()=>{
                             </div>
                         </div>                
                     </div>
+                    <button>
+                        <Link to="/videos">
+                            Click here for more videos
+                        </Link>
+                    </button>
                 </div>
             </section>
         </>

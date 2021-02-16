@@ -6,7 +6,8 @@
             a{
                 text-decoration: none;
                 margin: 0 14px;
-                font-size: 1em;
+                font-size: 1.3em;
+                color: white !important;
             }
         }
     }
@@ -27,19 +28,19 @@
 
     min-height: 10vh;
     width: 90%;
-    margin: 0 5%;
-    border-bottom: 1px solid #292929;
+    margin: 1% 5%;
+    // border-bottom: 1px solid #292929;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     z-index: 999;
 
-    h1{
-        a{
-            font-size: 20px;
-        }
-    }
+    // h1{
+    //     a{
+    //         font-size: 20px;
+    //     }
+    // }
 }
 
 .hamburger-ul{
@@ -145,6 +146,6 @@
 }
 
 .logo-img{
-    width: 60px;
+    width: 65px;
     max-width: 100%;
 }

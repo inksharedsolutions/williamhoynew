@@ -7,7 +7,7 @@ const Banner = ()=>{
         <>
             <section className="banner-section">
                 <div className="container-gt">
-                    <div className="grid-two-columns" id="banner-layout-responsive">
+                    {/* <div className="grid-two-columns" id="banner-layout-responsive"> */}
                         
                         <div className="left-col">
                             <div className="banner-content-wrapper">
@@ -16,7 +16,7 @@ const Banner = ()=>{
                                     <span>A Story Teller</span>
                                 </h1>
                                 <p>
-                                    In my early days as a kid living on our farm in Chula Vista, CA.  
+                                    In my early days as a kid living on our farm in Chula Vista, CA. <br />
                                     I use to tell stories, mostly with action, like war stories,
                                     detectives or cowboys and Indians. 
                                 </p>
@@ -28,10 +28,10 @@ const Banner = ()=>{
                             </div>
                         </div>
 
-                        <div className="right-col banner-img">
+                        {/* <div className="right-col banner-img">
                             <img src={ImgBanner} alt="hat and binoculars"/>
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
                 </div>
             </section>
         </>

@@ -4,8 +4,9 @@ import Nav from '../components/nav'
 import Banner from '../components/non-front-banner'
 import BookInfo from '../components/book-info/book-info'
 import { DiscussionEmbed } from "disqus-react"
-import Book1 from '../images/book_front_1.png'
-import Book2 from '../images/book_front_2.png'
+import Book1 from "../images/gotch'em-book-1-min.png"
+import Book2 from '../images/the-gifted-one-book-min.png'
+import { Helmet } from 'react-helmet';
 
 const ATB = (props)=>{
 
@@ -22,10 +23,11 @@ const ATB = (props)=>{
 	return (
 		<>
 		 	<Layout>
+                <Helmet title="Books | William D. Hoy" />
 		 		<Nav pathExt={props.path}/>
 		 		<Banner
-                    spanFirst={`About The`}
-                    contextHeading={`Book`}
+                    // spanFirst={`About The`}
+                    contextHeading={`Books`}
                  
                  />
 

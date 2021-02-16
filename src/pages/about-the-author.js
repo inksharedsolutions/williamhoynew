@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Nav from '../components/nav'
 import Banner from '../components/non-front-banner'
 import AuthorImg from '../../static/img/author_img.png'
+import { Helmet } from 'react-helmet';
 
 
 /*Slick*/
@@ -20,7 +21,7 @@ import Img2 from '../../static/author/2.jpeg'
 import Img3 from '../../static/author/3.jpeg'
 import Img4 from '../../static/author/4.jpeg'
 import Img5 from '../../static/author/5.jpeg'
-import Img6 from '../../static/author/6.jpeg'
+// import Img6 from '../../static/author/6.jpeg'
 
 const ATB = (props)=>{
 
@@ -45,6 +46,7 @@ const ATB = (props)=>{
 	return (
 		<>
 		 	<Layout>
+                <Helmet title="About the Author | William D. Hoy" />
 		 		<Nav pathExt={props.path}/>
                  <Banner 
                  spanFirst={`About The`}
@@ -90,7 +92,7 @@ const ATB = (props)=>{
                             <p>
                                 <span className="author-name">
                                     <span className="author-span-ft">Author |  Writer </span>
-                                    William Hoy
+                                    William D. Hoy
                                 </span>
                             </p>
 
@@ -103,16 +105,19 @@ const ATB = (props)=>{
 
                             <div className="photo-row">
                                 <div className="photo-column">
-                                    <img src={Img6} alt="book signing"/>
+                                    {/* <img src={Img6} alt="book signing"/> */}
+                                    <img src={Img4} alt="seven men smiling"/>
                                 </div>
                                 <div className="photo-column">
-                                    <img src={Img4} alt="seven men smiling"/>
                                     <img src={Img2} alt="3 men looking sideways"/>
+                                </div>
+                                <div className="photo-column">
                                     <img src={Img3} alt="3 men smiling"/>
                                 </div>
                                 <div className="photo-column">
                                     <img src={Img5} alt="author"/>
-
+                                </div>
+                                <div className="photo-column">
                                     <img src={Img1} alt="man and woman"/>
                                 </div>
                             </div>

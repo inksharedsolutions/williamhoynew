@@ -10,8 +10,10 @@ const Nav = (props) =>{
 	const pages = [
 		 'Home',
 		 'About-the-Author', 
-		 'About-the-Book', 
-		 'Contact'
+		 'Books', 
+		 'Videos',
+		 'Contact',
+		 
 	]	
 
 	let Listed = pages.map((e) =>{
@@ -36,12 +38,12 @@ const Nav = (props) =>{
     return(		
         <>
 			<nav className="navigation"
-				style={props.pathExt === '/' || props.pathExt === ''  ? {
-						borderBottom: '1px solid rgb(241, 229, 184)'
-					}:{
-						borderBottom: '1px solid rgb(241, 229, 184)'
-						}
-					}
+				// style={props.pathExt === '/' || props.pathExt === ''  ? {
+				// 		borderBottom: '1px solid rgb(241, 229, 184)'
+				// 	}:{
+				// 		borderBottom: '1px solid rgb(241, 229, 184)'
+				// 		}
+				// 	}
 				>
 
 				<h1>

@@ -3,6 +3,7 @@ import Layout from '../components/layout'
 import Inputs from "../components/Inputs/inputs"
 import Nav from '../components/nav'
 import Banner from '../components/non-front-banner'
+import { Helmet } from 'react-helmet';
 
 
 const Contact = (props)=>{
@@ -34,7 +35,7 @@ const Contact = (props)=>{
         <>
 
             <Layout>
-
+                <Helmet title="Contact | William D. Hoy" />
 		 		<Nav pathExt={props.path}/>
 		 		<Banner 
                     spanFirst={`Get In`}
@@ -103,18 +104,17 @@ const Contact = (props)=>{
                         <div className="info-section-address">
                             <span>
                                 <h5>Address</h5>
-                                831 N Tatnall Street, Suite M #188 Wilmington,
-                                DE 19801
+                                <p>831 N Tatnall Street, Suite M #188 Wilmington, DE 19801</p>
                             </span>
 
                             <span>
                                 <h5>Phone</h5>
-                                888-323-7009
+                                <a href="tel:8883237009" style={{color: '#c1c1c1'}}>888-323-7009</a>
                             </span>
 
                             <span>
                                 <h5>Email</h5>
-                                publish@stratton-press.com
+                                <a href="mailto:publish@stratton-press.com" style={{color: '#c1c1c1'}}>publish@stratton-press.com</a>
                             </span>
                         </div>
                     </div>

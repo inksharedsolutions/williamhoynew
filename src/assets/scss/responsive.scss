@@ -78,6 +78,10 @@
         }
     
     }
+
+    .commentSection{
+        padding: 0 5%;
+    }
 }
 
 @media screen and (max-width: 620px){
@@ -157,7 +161,9 @@
 
     .grid-two-columns{
         grid-template: initial;
+        row-gap: 10px;
         height: auto;
+        margin-bottom: 50px;
     }
 
     #banner-layout-responsive{
@@ -207,8 +213,15 @@
     }
     
     .book-wraps{
+        height: auto;
         img{
             width:200px;
+        }
+    }
+
+    .radio-interview{
+        button{
+            margin-top: 50px;
         }
     }
 }
@@ -220,6 +233,21 @@
             display: block;
             margin: 1em auto;
         }
+    }
+
+    .banner-content-wrapper{
+        padding: 5%;
+    }
+
+    .radio-interviews-content{
+        .video-header{
+            font-size: 2em !important;
+            text-align: center;
+        }
+    }
+
+    .flex-container-fx{
+        padding: 0 25px !important;
     }
 
 }
