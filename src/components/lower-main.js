@@ -40,7 +40,7 @@ const LowerMain = ()=>{
                         <div className="grid-child-video">
                             <h1 className="title">Encarnatus</h1>
                             <div className="player-wrapper">
-                                <iframe src="https://drive.google.com/file/d/1g67_4b5xnpfyT7J4drWEpI7QOnPm_UAs/preview" width="100%" height="400" title="encarnatus1"></iframe>
+                                <iframe src="https://drive.google.com/file/d/1HFc53ZxXqsq1EZHgLXmBU-3Vv1fVe-VJ/preview" width="100%" height="400" title="encarnatus1"></iframe>
                             </div>
                         </div>                  
                         {/* <div className="grid-child-content">

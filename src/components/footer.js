@@ -60,17 +60,16 @@ const Footer = ()=>{
                                         icon={faGoodreads} />
                                 </a>
                             </li>
-                            {/* <li>
+                            <li>
                                 <a 
                                     rel="noopener noreferrer"
                                     target="_blank"
-                                    href="https://www.imdb.com/name/nm6517171/"
-                                    alt="IMDB">
+                                    href="https://www.imdb.com/name/nm6517171/" >
                                     <FontAwesomeIcon 
                                         className='font-awesome'
                                         icon={faImdb} />
                                 </a>
-                            </li> */}
+                            </li>
                         </ul>
                     </nav>
 

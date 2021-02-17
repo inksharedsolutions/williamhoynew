@@ -68,7 +68,7 @@ const BookInfo = (props)=>{
                             <li><a rel="noopener noreferrer" target="_blank" href={props.data.paperback.booksamillion}>Books A Million</a></li>
                         </nav>
                         
-                        {       
+                        {/* {       
                             props.data.screenPlay && (
                                 <nav className="booklinkBlocks screenPlay-viewer">
                                     <span>ScreenPlay :</span>
@@ -100,7 +100,7 @@ const BookInfo = (props)=>{
                                     </Modal>
                                 </nav>
                             )
-                        }
+                        } */}
         
 
                     </section>

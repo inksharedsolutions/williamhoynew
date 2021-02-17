@@ -250,4 +250,15 @@
         padding: 0 25px !important;
     }
 
+    #screenplay{
+        white-space: normal;
+        height: auto;
+        max-width: 250px;
+        margin: 0 auto;
+        
+        span{
+            font-size: 1em;
+        }
+    }
+
 }

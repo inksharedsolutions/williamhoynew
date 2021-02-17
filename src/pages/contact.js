@@ -46,7 +46,7 @@ const Contact = (props)=>{
                     <div className="flex-container-fx">
 
                             <p className="contactMessage">
-                                "Drop me a line, I'd love to hear from you!'
+                                Drop me a line, I'd love to hear from you!
                             </p>
 
                             <form 

@@ -49,19 +49,19 @@ const radInt = (props) =>{
 						<h1 className="video-header">Encarnatus</h1>
                         <div className="video-row">
 							<div className="player-wrapper">
-								<iframe src="https://drive.google.com/file/d/1g67_4b5xnpfyT7J4drWEpI7QOnPm_UAs/preview" width="100%" height="400" title="encarnatus1"></iframe> 
+								<iframe src="https://drive.google.com/file/d/1HFc53ZxXqsq1EZHgLXmBU-3Vv1fVe-VJ/preview" width="100%" height="400" title="encarnatus1" allow="fullscreen"></iframe> 
 							</div>
                             <div className="player-wrapper">
-								<iframe src="https://drive.google.com/file/d/1JCu-vzRM5W1L4aripNIV6hVq8V78UzrB/preview" width="100%" height="400" title="encarnatus2"></iframe>
+								<iframe src="https://drive.google.com/file/d/185ziVUEXv1so41FQD7IVqSHJdeq0QUFy/preview" width="100%" height="400" title="encarnatus2" allow="fullscreen"></iframe>
 							</div>
 							<div className="player-wrapper">
-								<iframe src="https://drive.google.com/file/d/1LK7gw2KWlNhOFQZMgP-Ou35Qim5pqL_X/preview" width="100%" height="400" title="encarnatus3"></iframe>
+								<iframe src="https://drive.google.com/file/d/1vwjAtyRZDqSe6X9sgZL_j3lh8UX2NJah/preview" width="100%" height="400" title="encarnatus3" allow="fullscreen"></iframe>
 							</div>
 						</div> 
 						<h1 className="video-header">Commercial: Pete's Coffee</h1>
 						{/* <div className="grid-two-columns">   */}
 							<div className="radint-vid video-2" id="commercial-vid">
-								<iframe src="https://www.imdb.com/videoproembed/vi2797055001" width="600" height="400" title="petes-coffee"></iframe>
+								<iframe src="https://drive.google.com/file/d/1s4YAqd8LECFl88YtO6mbk75vkvO5EJWG/preview" width="600" height="400" title="petes-coffee" allow="fullscreen"></iframe>
 							</div>
 						{/* </div>  */}
 					</div>

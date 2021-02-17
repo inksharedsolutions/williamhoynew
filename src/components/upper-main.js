@@ -1,9 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from 'gatsby'
 import Book1 from "../images/gotch'em-book-1-min.png"
 import Book2 from '../images/the-gifted-one-book-min.png'
 
+/* ScreenPlay Viewer */
+import 'antd/dist/antd.css';
+import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
+import { Modal, Button } from 'antd';
+import { Worker } from '@phuocng/react-pdf-viewer';
+import Viewer from '@phuocng/react-pdf-viewer';
+import ScreenPlay from '../../static/pdf/screen_play.pdf'
+import { FundViewOutlined  } from '@ant-design/icons';
+
 const UpperMain =()=>{
+
+    const [visible, visibFunc] = useState(false);
+
+    const showModal = () => {
+        visibFunc(!visible)
+    };
+    
+    const handleOk = e => {
+        visibFunc(false)
+    };
+    
+    const handleCancel = e => {
+        visibFunc(false)
+    };
+
     return  (
         <>
             <section className="upper-main">
@@ -15,6 +39,13 @@ const UpperMain =()=>{
                        an adventure Sci-Fi novel, and Gotch'em: Johnny Taggett,
                        a tuff guy detective mystery.
                     </p>
+
+                    <br /><br />
+
+                    <Button  onClick={()=>showModal()} id="screenplay">
+                        <span>See the ScreenPlay adaptation of Gotch'em here.</span>
+                        <FundViewOutlined />
+                    </Button>
 
                     <div className="grid-two-columns" id="wrapper-two-books">
                         <div className="book-wraps">
@@ -43,6 +74,28 @@ const UpperMain =()=>{
                     </div>
                 </div>
             </section>
+
+
+            <Modal
+                title="See the Screenplay adaptation of  Gotch'em here!"
+                visible={visible}
+                onOk={()=>handleOk()}
+                onCancel={()=>handleCancel()}
+                >
+
+                <Worker 
+                    workerUrl="https://unpkg.com/pdfjs-dist@2.4.456/build/pdf.worker.min.js">
+                    <div
+                        style={{
+                            height: '750px',
+                        }}
+                    >
+                        <Viewer 
+                            fileUrl={ScreenPlay} 
+                        />
+                    </div>
+                </Worker>
+            </Modal>
         </>
     )
 }
