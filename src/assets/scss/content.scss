@@ -67,6 +67,13 @@
 			content: '';
 		}
 	}
+
+	#screenplay:hover{
+		background-color:rgb(221, 177, 1) !important;
+		span{
+			color: white !important;
+		}
+	}
 }
 
 .mid-main {
