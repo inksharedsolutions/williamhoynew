@@ -163,7 +163,8 @@
         grid-template: initial;
         row-gap: 10px;
         height: auto;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
+        padding: 10% 0;
     }
 
     #banner-layout-responsive{
@@ -219,11 +220,11 @@
         }
     }
 
-    .radio-interview{
-        button{
-            margin-top: 50px;
-        }
-    }
+    // .radio-interview{
+    //     button{
+    //         margin-top: 50px;
+    //     }
+    // }
 }
 
 @media screen and (max-width: 450px){
@@ -258,6 +259,16 @@
         
         span{
             font-size: 1em;
+        }
+    }
+
+    .grid-child-content{
+        max-width: 250px;
+        margin: 0 auto;
+        text-align: center;
+
+        h1{
+            font-size: 3em !important;
         }
     }
 

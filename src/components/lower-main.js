@@ -37,7 +37,7 @@ const LowerMain = ()=>{
                 <div className="container-gt">
                     <div className="grid-two-columns" id="radio-body">  
                         <div className="grid-child-content">
-                            <h5>R. Michael Richard</h5>
+                            <h5>William D. Hoy</h5>
 
                             <h1>
                                 <span>Radio</span>
