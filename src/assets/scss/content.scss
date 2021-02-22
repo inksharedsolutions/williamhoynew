@@ -17,6 +17,10 @@
 		margin: 2% auto;
 	}
 
+	button:hover{
+		background:rgb(221, 177, 1);
+	}
+
 	h5 {
 		margin: 0;
 		font-size: 2em;
@@ -32,13 +36,13 @@
 		align-self: center;
 	}
 
-	#link-text{
-		background: none !important;
-	}
+	// #link-text{
+	// 	background: none !important;
+	// }
 
-	#link-text:hover{
-		background: rgb(255, 202, 0);
-	}
+	// #link-text:hover{
+	// 	background: rgb(255, 202, 0);
+	// }
 }
 
 .upper-main {
@@ -139,35 +143,26 @@
 
 .radio-interview {
 	background: #f7f4e9;
-	text-align: center;
-	margin: 0;
 
 	.grid-child-content {
 		h1 {
-			font-size: 60px;
-			font-weight: bold;
+			color: #000 !important;
+			font-size: 4em;
+			line-height: 1;
+			font-weight: 700;
+
 			span {
 				display: block;
-				font-size: 60px;
 			}
 		}
-	}
 
-	.section-header {
-		font-size: 2.5em;
-		text-transform: uppercase;
-		font-weight: 900;
-		padding-top: 30px;
-		// position: absolute;
-	}
-
-	button{
-		margin-bottom: 50px;
-	}
-
-	.title{
-		color: gray;
-		margin-top: 50px;
+		h5 {
+			text-transform: uppercase;
+			margin-bottom: 22px;
+			letter-spacing: 8px;
+			font-weight: 100;
+			color: rgb(216, 120, 100);
+		}
 	}
 }
 

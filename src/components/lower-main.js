@@ -35,26 +35,30 @@ const LowerMain = ()=>{
             </section>
             <section className="radio-interview">
                 <div className="container-gt">
-                    <h1 className="section-header">Featured Videos</h1>
-                    <div className="grid-two-columns" style={{height: 'auto'}}>  
-                        <div className="grid-child-video">
-                            <h1 className="title">Encarnatus</h1>
-                            <div className="player-wrapper">
-                                <iframe src="https://drive.google.com/file/d/1HFc53ZxXqsq1EZHgLXmBU-3Vv1fVe-VJ/preview" width="100%" height="400" title="encarnatus1"></iframe>
-                            </div>
-                        </div>                  
-                        {/* <div className="grid-child-content">
+                    <div className="grid-two-columns" id="radio-body">  
+                        <div className="grid-child-content">
+                            <h5>R. Michael Richard</h5>
+
                             <h1>
-                                Radio <span>Interviews</span>
+                                <span>Radio</span>
+                                <span>Interview</span>
                             </h1>
+
+                            <p>
+                            Just like how the story of the book goes, 
+                            the process in writing it was also a journey.
+                            Hear about it from the author himself.
+                            Click the play button and learn more.
+                            </p>
+
                             <button>
-                                <Link to="/radio-interviews">
-                                    See More
+                                <Link to="/videos">
+                                    See More Videos
                                 </Link>
                             </button>
-                        </div> */}
+                            
+                        </div>
                         <div className="grid-child-video">
-                            <h1 className="title">Radio Interview</h1>
                             <div className="player-wrapper">
                                 <ReactPlayer
                                     className="react-player"
@@ -67,11 +71,6 @@ const LowerMain = ()=>{
                             </div>
                         </div>                
                     </div>
-                    <button>
-                        <Link to="/videos">
-                            Click here for more videos
-                        </Link>
-                    </button>
                 </div>
             </section>
         </>
