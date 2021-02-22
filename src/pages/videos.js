@@ -58,7 +58,7 @@ const radInt = (props) =>{
 								<iframe src="https://drive.google.com/file/d/1vwjAtyRZDqSe6X9sgZL_j3lh8UX2NJah/preview" width="100%" height="400" title="encarnatus3" allow="fullscreen"></iframe>
 							</div>
 						</div>  */}
-						<h1 className="video-header">Commercial: Pete's Coffee</h1>
+						<h1 className="video-header">Commercial: Peets Coffee & Tea</h1>
 						{/* <div className="grid-two-columns">   */}
 							<div className="radint-vid video-2" id="commercial-vid">
 								<iframe src="https://www.imdb.com/videoproembed/vi2797055001" width="600" height="400" title="petes-coffee" allow="fullscreen"></iframe>
