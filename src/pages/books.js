@@ -6,7 +6,8 @@ import BookInfo from '../components/book-info/book-info'
 import { DiscussionEmbed } from "disqus-react"
 import Book1 from "../images/gotch'em-book-1-min.png"
 import Book2 from '../images/the-gifted-one-book-min.png'
-import Book3 from '../images/usurper1.png'
+import Book3 from '../images/usurper.png'
+import Book4 from '../images/killing-sound1.png'
 import { Helmet } from 'react-helmet';
 
 const ATB = (props)=>{
@@ -105,20 +106,43 @@ const ATB = (props)=>{
                                 }}
                             />
 
+                            <BookInfo  
+                                data={{
+                                    title:`Usurper`,
+                                    spanTitle: "",
+                                    imgSrc: Book3,
+                                    id:'Usurper',
+                                    content:
+                                    `Usurper was inspired from a true story of a young man named Antonio Ferretti in 1890s in Trenton, New Jersey, who used a priest name of Father Mariano Luca as his own in getting a job as an Italian priest in Denver, Colorado. The young man with no experience struggled but he endured and won over the towns people, including the local Bishop. He worked hard, getting a new church, built, but with controversy. Having a lonely life he secretly had a child. The railroad worked its way past their town bringing wealth, misery, happiness and unexpected tragedy. Father Luca expected his challenge and secretly learned to be a priest never reveling his true identity. Performing funerals at the far away cemetery proved to be a challenge. Sometime later Father Luca's secret catches up with him and tragedy happens. The city remembers him by naming their new church after him.`,
+
+                                    ebooks:{
+                                        stratton : '',
+                                        barnes: 'https://www.barnesandnoble.com/w/usurper-william-d-hoy/1140505770?ean=9781648956249',
+                                        amazon :'https://www.amazon.com/dp/B09LCSL8VK/ref=sr_1_1?keywords=9781648956249&qid=1636471901&qsid=145-4607600-8403252&sr=8-1&sres=B09LCSL8VK&srpt=ABIS_BOOK', 
+                                    },
+                                    paperback:{
+                                        amazon:'https://www.amazon.com/Usurper-William-D-Hoy/dp/1648956238/ref=sr_1_1?keywords=9781648956232&qid=1637657083&qsid=139-8239893-7628754&sr=8-1&sres=1648956238',
+                                        barnes:'https://www.barnesandnoble.com/w/usurper-william-d-hoy/1140505770?ean=9781648956232',
+                                        booksamillion:'https://www.booksamillion.com/p/Usurper/William-D-Hoy/9781648956232?id=8376572031688',
+                                    },
+                                    screenPlay: true
+                                }}
+                            />
+
                             <div className="columns book-container-ft">
                                 <div className="column"> 
                                     <div className="bookImgContainer">
-                                        <img alt="main-book" src={Book3} />
+                                        <img alt="main-book" src={Book4} />
                                     </div>
                                 </div>
 
-                                <div className="column" id="usurper">
+                                <div className="column" id="killing-sound">
                                     <section className="contentBook">
 
-                                        <h1>Usurper</h1>
+                                        <h1>The Killing Sound</h1>
                                         <span></span>
                                         <p>
-                                            Usurper was inspired from a true story of a young man named Antonio Ferretti in 1890s in Trenton, New Jersey, who used a priest name of Father Mariano Luca as his own in getting a job as an Italian priest in Denver, Colorado. The young man with no experience struggled but he endured and won over the towns people, including the local Bishop. He worked hard, getting a new church, built, but with controversy. Having a lonely life he secretly had a child. The railroad worked its way past their town bringing wealth, misery, happiness and unexpected tragedy. Father Luca expected his challenge and secretly learned to be a priest never reveling his true identity. Performing funerals at the far away cemetery proved to be a challenge. Sometime later Father Luca's secret catches up with him and tragedy happens. The city remembers him by naming their new church after him.
+                                        Taggett drops his knife as he franticly grabs the little lip of surface between the brick wall and the edge of the death pit he’s falling into. Feet dangling a he’s digging his finger tips into the cement. Slowly he begins to pull himself up over the edge of the rim of the pit with his aching fingers. His body’s shaking like a prisoner getting electrocuted as he hauls his big body up over the edge laying flat on his belly in the blind alley gasping for a breath of air. Some time later, Jie’s eyes open into the darkness. The thick air in his crappy little room is clinging to every inch of his skin as he unfolds his legs from their lotus position and sniffs almost silently. Nothing’s on fire. He places his feet in their black socks carefully onto the floor and raises from the chair and stands absolutely still for one entire minute. The tinny blare of jazz a few miles away creeps through the cracks in the flophouse’s walls just beyond the range of most ears. How in the hell am I suppose to know anything says the old guy? I just drink here. That gets him another smack, this one hard enough to bend him over the table. He straightens up and glares into Taggett’s face and says,” Listen, I don’t mind answering questions like a gentleman, but you need to curb your dog here. This Chink’s.......” 
                                         </p>
                                     </section>
                                 </div>	
