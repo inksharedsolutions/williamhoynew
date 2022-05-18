@@ -77,10 +77,24 @@ const Nav = (props) =>{
 
 					<ul>
 					<p class="list-label">Navigations.</p>
-						{
+						{/* {
 							Listed
-						}
-
+						} */}
+						<li>
+							<Link to="/">Home</Link>	
+						</li>
+						<li>
+							<Link to="/about-the-author">About the Author</Link>	
+						</li>
+						<li>
+							<Link to="/books">Books</Link>	
+						</li>
+						<li>
+							<Link to="/videos">Videos</Link>	
+						</li>
+						<li>
+							<Link to="/contact">Contact</Link>	
+						</li>
 					</ul>
 				</section>
 	
